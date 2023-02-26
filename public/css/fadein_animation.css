@@ -1,0 +1,128 @@
+<style>
+/** Author y_maeda
+*********************************
+***
+*** fadein animation CSS
+***
+*********************************
+**  変更履歴
+** -------------------------------
+** 2020-01-04 y_maeda 新規作成
+**
+** --------------------------------*/
+
+/**********アニメーション付与CSS**********/
+
+/*通常fade in*/
+.entry-NomalFadeIn{
+  animation-name: NomalFadeIn;/* アニメーション名 */
+  animation-duration: 1.5s;/* アニメーション時間 */
+  opacity: 1 !important;
+}
+
+/*右から左*/
+.entry-RightToLeft{
+  animation-name: RightToLeft;/* アニメーション名 */
+  animation-duration: 1.5s;/* アニメーション時間 */
+  opacity: 1 !important;
+}
+
+/*左から右*/
+.entry-LeftToRight{
+  animation-name: LeftToRight;/* アニメーション名 */
+  animation-duration: 1.5s;/* アニメーション時間 */
+  opacity: 1 !important;
+}
+
+/*下から上*/
+.entry-SlideUp{
+  animation-name: SlideUp;/* アニメーション名 */
+  animation-duration: 1.5s;/* アニメーション時間 */
+  opacity: 1 !important;
+}
+
+/**********アニメーション設定**********/
+
+/*通常fade in*/
+@keyframes NomalFadeIn {
+  0% {
+    opacity: 0;/* 透明 */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+  }
+}
+
+/*右から左*/
+@keyframes RightToLeft {
+  0% {
+    opacity: 0;/* 透明 */
+    transform: translateX(100px);/* X軸方向に100px */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+    transform: translateX(0);/* X軸方向に0px */
+  }
+}
+/*左から右*/
+@keyframes LeftToRight {
+  0% {
+    opacity: 0;/* 透明 */
+    transform: translateX(-100px);/* X軸方向に100px */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+    transform: translateX(0);/* X軸方向に0px */
+  }
+}
+
+/*上から下*/
+@keyframes SlideDown {
+  0% {
+    opacity: 0;/* 透明 */
+    transform: translateY(-100px);/* Y軸方向に-100px */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+    transform: translateY(0);/* Y軸方向に0px */
+  }
+}
+
+/*下から上*/
+@keyframes SlideUp {
+  0% {
+    opacity: 0;/* 透明 */
+    transform: translateY(100px);/* Y軸方向に100px */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+    transform: translateY(0);/* Y軸方向に0px */
+  }
+}
+/**********アニメーション設定end**********/
+
+/*ヘッダーを上から下へ*/
+#blog-title {
+  animation-name: SlideDown;/* アニメーション名 */
+  animation-duration: 2s;/* アニメーション時間 */
+}
+
+/*グローバルナビを上から下へ*/
+#top-editarea {
+  animation-name: SlideDown;/* アニメーション名 */
+  animation-duration: 2s;/* アニメーション時間 */
+}
+
+/*記事一覧を下から上へ*/
+.page-archive .archive-entries .archive-entry {
+  animation-name: SlideUp;/* アニメーション名 */
+  animation-duration: 2s;/* アニメーション時間 */
+}
+
+/*記事タイトルを右から左へ*/
+.page-entry .entry-title {
+  animation-name: RightToLeft;/* アニメーション名 */
+  animation-duration: 2s;/* アニメーション時間 */
+}
+
+</style>

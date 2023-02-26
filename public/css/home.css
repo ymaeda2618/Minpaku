@@ -1,0 +1,31 @@
+/** Author y_maeda
+*********************************
+***
+*** HOME CSS
+***
+*********************************
+** --------------------------------*/
+
+.slider {
+    height: 53vw;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.slick-img img {
+    width: 100%;
+}
+
+@keyframes zoomUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+        /* 拡大率 */
+    }
+}
+
+.add-animation {
+    animation: zoomUp 10s linear 0s normal both;
+}

@@ -1,0 +1,79 @@
+/** Author y_maeda
+*********************************
+***
+*** COMMON CSS
+***
+*********************************
+**  変更履歴
+** -------------------------------
+** 2020-04-03 y_maeda 新規作成
+**
+** --------------------------------*/
+
+
+/*******************
+ *共通処理
+*******************/
+
+body {
+    font-family: "Noto Serif JP", 游明朝, "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, "Times New Roman", Times, Garamond, Georgia, serif;
+    background-color: #1e212a;
+    color: #ffff;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    top: 25px;
+    z-index: 1000;
+    position: fixed;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffff;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffff;
+    font-weight: bolder;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.top-text-area {
+    position: fixed;
+    bottom: 30%;
+    z-index: 1000;
+    color: #FFFF;
+    width: 80%;
+    left: 10%;
+    font-size: 48px;
+}
+
+
+/*******************
+ *PCとSPのCSS
+*******************/
+
+.pc-zone {
+    display: block;
+    width: 100%;
+}
+
+.sp-zone {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .pc-zone {
+        display: none;
+    }
+    .sp-zone {
+        display: block;
+    }
+}
