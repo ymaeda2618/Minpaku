@@ -88,7 +88,7 @@
     </section>
     <section class="cottage-container">
         <div class="cottage-img-area">
-            <img class="pc-zone" src="{{ asset('/img/minpaku_3_pc.png') }}" alt="" />
+            <img class="pc-zone" src="{{ asset('/img/cotage_img.png') }}" alt="" />
         </div>
         <div class="cottage-text-area">
             <div class="cottage-sub-title">大自然に佇む</div>
