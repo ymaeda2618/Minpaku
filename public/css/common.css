@@ -4,9 +4,6 @@
 *** COMMON CSS
 ***
 *********************************
-**  変更履歴
-** -------------------------------
-** 2020-04-03 y_maeda 新規作成
 **
 ** --------------------------------*/
 
@@ -34,6 +31,12 @@ body {
     color: #ffff;
     font-weight: bolder;
     font-size: 24px;
+    width: 15%;
+}
+
+.navbar-inverse .navbar-brand img {
+    display: block;
+    width: 100%;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -43,16 +46,6 @@ body {
 
 .navbar-nav {
     float: right;
-}
-
-.top-text-area {
-    position: fixed;
-    bottom: 30%;
-    z-index: 1000;
-    color: #FFFF;
-    width: 80%;
-    left: 10%;
-    font-size: 48px;
 }
 
 
@@ -76,4 +69,26 @@ body {
     .sp-zone {
         display: block;
     }
+}
+
+
+/*******************
+ *footer
+*******************/
+
+#footer {
+    display: block;
+    padding: 20px 0px;
+}
+
+.footer-logo-area {
+    width: 10%;
+    max-width: 100px;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.footer-logo-area img {
+    display: block;
+    width: 100%;
 }

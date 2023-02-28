@@ -29,3 +29,407 @@
 .add-animation {
     animation: zoomUp 10s linear 0s normal both;
 }
+
+
+/*******************
+ *トップページ
+*******************/
+
+.top-img-container {
+    position: relative;
+}
+
+.top-text-area {
+    position: absolute;
+    bottom: 30%;
+    z-index: 1000;
+    color: #FFFF;
+    width: 80%;
+    left: 10%;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 10px;
+}
+
+.top-text-area p:first-child {
+    font-size: 4rem;
+}
+
+.top-text-area p:nth-child(2) {
+    font-size: 5rem;
+}
+
+
+/*******************
+ *メッセージエリア
+*******************/
+
+.top-message-container {
+    background-color: #ffff;
+    color: #1e212a;
+    padding: 100px 0px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.13333;
+    letter-spacing: 0.02em;
+}
+
+
+/*******************
+ *Cottageエリア
+*******************/
+
+.cottage-container {
+    background-color: #ffff;
+    color: #1e212a;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.cottage-img-area {
+    width: 60%;
+    display: flex;
+}
+
+.cottage-text-area {
+    text-align: left;
+    margin-left: 90px;
+    padding-top: 50px;
+}
+
+.cottage-sub-title {
+    color: #911414;
+    font-size: 2rem;
+}
+
+.cottage-title {
+    font-size: 7rem;
+}
+
+.cottage-text {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+
+/*******************
+ *restingエリア
+*******************/
+
+.resting-container {
+    background-color: #ffff;
+    color: #1e212a;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.resting-img-area {
+    width: 60%;
+    display: flex;
+    margin-right: 0;
+}
+
+.resting-text-area {
+    text-align: left;
+    margin-left: 90px;
+    padding-top: 50px;
+    width: 40%;
+}
+
+.resting-sub-title {
+    color: #911414;
+    font-size: 2rem;
+}
+
+.resting-title {
+    font-size: 7rem;
+}
+
+.resting-text {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+
+/*******************
+ *saunaエリア
+*******************/
+
+.sauna-container {
+    background-color: #ffff;
+    color: #1e212a;
+    display: flex;
+    align-items: flex-start;
+    padding: 100px 0px;
+}
+
+.sauna-img-area {
+    width: 60%;
+    display: flex;
+}
+
+.sauna-text-area {
+    text-align: left;
+    margin-left: 90px;
+    padding-top: 50px;
+}
+
+.sauna-sub-title {
+    color: #911414;
+    font-size: 2rem;
+}
+
+.sauna-title {
+    font-size: 7rem;
+}
+
+.sauna-text {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+
+/*******************
+ *地図エリア
+*******************/
+
+.map-area {
+    margin: auto;
+    filter: grayscale(100%);
+}
+
+.map-area iframe {
+    height: 500px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .map-area {
+        padding: 30px 0px;
+    }
+    .map-area iframe {
+        height: 200px;
+    }
+}
+
+
+/*******************
+ *インフォメーションエリア
+*******************/
+
+.top-info {
+    padding: 71px 20px 80px;
+    background-color: #25313c;
+    color: #fff;
+}
+
+@media all and (min-width: 768px),
+print {
+    .top-info {
+        padding: 90px 88px 100px;
+    }
+}
+
+[data-page^="umashima"] .top-info {
+    background-color: #083f57;
+}
+
+@media all and (min-width: 768px),
+print {
+    .top-info__inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 728px;
+    }
+}
+
+.top-info-hdg {
+    margin-bottom: 2px;
+    font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+    font-size: 4.4rem;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+}
+
+@media all and (min-width: 768px),
+print {
+    .top-info-hdg {
+        margin-bottom: 16px;
+        font-size: 5.9rem;
+    }
+}
+
+.top-info-table {
+    width: 100%;
+}
+
+.top-info-table th {
+    padding-top: 28px;
+    padding-bottom: 14px;
+    color: #d5dce3;
+    font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.375;
+    text-align: left;
+}
+
+.top-info-table td {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.top-info-table tr:not(:last-child) td {
+    padding-bottom: 25px;
+    border-bottom: solid 1px #43515d;
+}
+
+[data-page^="umashima"] .top-info-table tr:not(:last-child) td {
+    border-bottom-color: #27596f;
+}
+
+@media all and (max-width: 767px) {
+    .top-info-table tr,
+    .top-info-table th,
+    .top-info-table td {
+        display: block;
+    }
+}
+
+@media all and (min-width: 768px),
+print {
+    .top-info-table {
+        width: 100%;
+    }
+    .top-info-table th,
+    .top-info-table td {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        vertical-align: top;
+    }
+    .top-info-table tr:not(:last-child) th,
+    .top-info-table tr:not(:last-child) td {
+        border-bottom: solid 1px #43515d;
+    }
+    .top-info-table th {
+        width: 36.53846%;
+        font-size: 1.5rem;
+        line-height: 1.46667;
+    }
+    [data-page^="umashima"] .top-info-table tr:not(:last-child) th,
+    [data-page^="umashima"] .top-info-table tr:not(:last-child) td {
+        border-bottom-color: #27596f;
+    }
+}
+
+
+/*******************
+ *予約ボタン
+*******************/
+
+.reserve-container {
+    background-color: #ffff;
+    color: #1e212a;
+    padding: 100px 0px;
+}
+
+.reserve-title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.reserve-text-area {
+    margin-bottom: 23px;
+    font-family: "Noto Serif JP", serif;
+    font-size: 2rem;
+    line-height: 2.13333;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.reserve-btn-area {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 376px;
+}
+
+.reserve-btn-target {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 504px;
+    display: block;
+    position: relative;
+}
+
+.reserve-btn-inner {
+    border: solid 1px #25313c;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #25313c;
+    color: #fff;
+    font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    text-align: center;
+    -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.reserve-btn-inner::after {
+    content: attr(data-btn-text);
+    margin: auto;
+    padding: 23px 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    color: #25313c;
+    -webkit-transform: translate3d(0, 70%, 0);
+    transform: translate3d(0, 70%, 0);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.reserve-btn-inner::after {
+    padding: 31px 50px;
+}
+
+a:hover .reserve-btn-inner {
+    background-color: transparent;
+}
+
+a:hover .reserve-btn-inner::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.reserve-btn-text {
+    padding: 31px 50px;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+a:hover .reserve-btn-text {
+    -webkit-transform: translate3d(0, -70%, 0);
+    transform: translate3d(0, -70%, 0);
+}

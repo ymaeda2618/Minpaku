@@ -22,7 +22,13 @@
             </div>
         </div>
         <footer id="footer" class="text-center">
-            <p>Copyright 2023 &copy; Ring.inc. </p>
+            <div class="footer-logo-area">
+                <img src="{{ asset('/img/letter_logo.png') }}" alt="軽井沢 紫水京" />
+            </div>
+            </div>
+            <div class="copyright-area">
+                <p>Copyright 2023 &copy; 紫水京理事会 </p>
+            </div>
         </footer>
     </body>
 
