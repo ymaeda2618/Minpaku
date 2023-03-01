@@ -70,7 +70,7 @@ section {
     .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(2) {
         transform: rotate(45deg);
         position: absolute;
-        top: 10px;
+        top: 11px;
     }
     .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(3) {
         opacity: 0;
@@ -78,7 +78,7 @@ section {
     .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(4) {
         transform: rotate(-45deg);
         position: absolute;
-        bottom: 10px;
+        bottom: 11px;
     }
 }
 
