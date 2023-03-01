@@ -65,16 +65,20 @@ section {
         float: unset;
     }
     .navbar-toggle:not(.collapsed) .icon-bar {
-        width: 10px;
+        width: 15px;
     }
     .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(2) {
         transform: rotate(45deg);
+        position: absolute;
+        top: 10px;
     }
     .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(3) {
         opacity: 0;
     }
     .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(4) {
         transform: rotate(-45deg);
+        position: absolute;
+        bottom: 10px;
     }
 }
 
