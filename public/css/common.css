@@ -15,6 +15,7 @@
 body {
     font-family: "Noto Serif JP", 游明朝, "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, "Times New Roman", Times, Garamond, Georgia, serif;
     color: #ffff;
+    overflow-x: hidden;
 }
 
 section {
@@ -116,6 +117,7 @@ section {
     padding: 20px 0px;
     font-size: 1.4rem;
     background-color: #1e212a;
+    overflow: hidden;
 }
 
 .footer-logo-area {

@@ -36,6 +36,7 @@
 
 .top-img-container {
     position: relative;
+    overflow-x: hidden;
 }
 
 .top-text-area {
@@ -84,6 +85,7 @@
     font-size: 2rem;
     line-height: 2.13333;
     letter-spacing: 0.02em;
+    overflow-x: hidden;
 }
 
 @media (max-width: 480px) {
@@ -106,6 +108,7 @@
     display: flex;
     align-items: flex-start;
     padding-top: 100px;
+    overflow-x: hidden;
 }
 
 .cottage-img-area {
@@ -177,6 +180,7 @@
     display: flex;
     align-items: flex-start;
     padding-top: 100px;
+    overflow-x: hidden;
 }
 
 .resting-img-area {
@@ -252,6 +256,7 @@
     display: flex;
     align-items: flex-start;
     padding: 100px 0px;
+    overflow-x: hidden;
 }
 
 .sauna-img-area {
@@ -320,6 +325,7 @@
 .map-area {
     margin: auto;
     filter: grayscale(100%);
+    overflow-x: hidden;
 }
 
 .map-area iframe {
@@ -345,6 +351,7 @@
     padding: 71px 20px 80px;
     background-color: #25313c;
     color: #fff;
+    overflow-x: hidden;
 }
 
 @media all and (min-width: 768px),
@@ -456,6 +463,7 @@ print {
     background-color: #ffff;
     color: #1e212a;
     padding: 100px 0px;
+    overflow-x: hidden;
 }
 
 .reserve-title {
