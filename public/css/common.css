@@ -55,6 +55,29 @@ section {
     background-color: #1e212a;
 }
 
+.navbar-inverse .navbar-collapse {
+    border-color: #101010;
+    background-color: #222;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-nav {
+        float: unset;
+    }
+    .navbar-toggle:not(.collapsed) .icon-bar {
+        width: 10px;
+    }
+    .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(2) {
+        transform: rotate(45deg);
+    }
+    .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(3) {
+        opacity: 0;
+    }
+    .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(4) {
+        transform: rotate(-45deg);
+    }
+}
+
 
 /*******************
  *PCとSPのCSS
