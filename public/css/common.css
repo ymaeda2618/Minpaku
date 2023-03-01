@@ -14,8 +14,11 @@
 
 body {
     font-family: "Noto Serif JP", 游明朝, "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, "Times New Roman", Times, Garamond, Georgia, serif;
-    background-color: #1e212a;
     color: #ffff;
+}
+
+section {
+    border: none;
 }
 
 .navbar-inverse {
@@ -48,26 +51,37 @@ body {
     float: right;
 }
 
+#loading-wrapper {
+    background-color: #1e212a;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-inverse {
+        padding-right: 45px;
+    }
+}
+
 
 /*******************
  *PCとSPのCSS
 *******************/
 
 .pc-zone {
-    display: block;
+    display: block!important;
     width: 100%;
 }
 
 .sp-zone {
-    display: none;
+    display: none!important;
+    ;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .pc-zone {
-        display: none;
+        display: none!important;
     }
     .sp-zone {
-        display: block;
+        display: block!important;
     }
 }
 
@@ -79,6 +93,8 @@ body {
 #footer {
     display: block;
     padding: 20px 0px;
+    font-size: 1.4rem;
+    background-color: #1e212a;
 }
 
 .footer-logo-area {
@@ -91,4 +107,14 @@ body {
 .footer-logo-area img {
     display: block;
     width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    #footer {
+        padding: 10px 0px;
+        font-size: 0.5rem;
+    }
+    .footer-logo-area {
+        padding: 20px 0px;
+    }
 }

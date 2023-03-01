@@ -7,7 +7,6 @@
 ** --------------------------------*/
 
 .slider {
-    height: 53vw;
     margin-inline: auto;
     overflow: hidden;
 }
@@ -60,6 +59,18 @@
     font-size: 5rem;
 }
 
+@media (max-width: 480px) {
+    .top-text-area {
+        letter-spacing: 2px;
+    }
+    .top-text-area p:first-child {
+        font-size: 1.8rem;
+    }
+    .top-text-area p:nth-child(2) {
+        font-size: 2.1rem;
+    }
+}
+
 
 /*******************
  *メッセージエリア
@@ -73,6 +84,15 @@
     font-size: 2rem;
     line-height: 2.13333;
     letter-spacing: 0.02em;
+}
+
+@media (max-width: 480px) {
+    .top-message-container {
+        padding: 50px 0px 40px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        letter-spacing: 2px;
+    }
 }
 
 
@@ -91,6 +111,11 @@
 .cottage-img-area {
     width: 60%;
     display: flex;
+}
+
+.cottage-img-area img {
+    display: block;
+    width: 100%;
 }
 
 .cottage-text-area {
@@ -113,6 +138,34 @@
     line-height: 4rem;
 }
 
+@media (max-width: 480px) {
+    .cottage-container {
+        display: block;
+        padding-top: 50px;
+    }
+    .cottage-img-area {
+        width: 90%;
+        display: block;
+    }
+    .cottage-text-area {
+        text-align: left;
+        margin-left: 45px;
+        padding-top: 25px;
+    }
+    .cottage-sub-title {
+        color: #911414;
+        font-size: 1.5rem;
+    }
+    .cottage-title {
+        font-size: 3.5rem;
+    }
+    .cottage-text {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 3px;
+    }
+}
+
 
 /*******************
  *restingエリア
@@ -130,6 +183,11 @@
     width: 60%;
     display: flex;
     margin-right: 0;
+}
+
+.resting-img-area img {
+    display: block;
+    width: 100%;
 }
 
 .resting-text-area {
@@ -153,6 +211,36 @@
     line-height: 4rem;
 }
 
+@media (max-width: 480px) {
+    .resting-container {
+        display: block;
+        padding-top: 50px;
+    }
+    .resting-img-area {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+    }
+    .resting-text-area {
+        text-align: left;
+        margin-left: 45px;
+        padding-top: 25px;
+        width: 100%;
+    }
+    .resting-sub-title {
+        color: #911414;
+        font-size: 1.5rem;
+    }
+    .resting-title {
+        font-size: 3.5rem;
+    }
+    .resting-text {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 3px;
+    }
+}
+
 
 /*******************
  *saunaエリア
@@ -169,6 +257,11 @@
 .sauna-img-area {
     width: 60%;
     display: flex;
+}
+
+.sauna-img-area img {
+    display: block;
+    width: 100%;
 }
 
 .sauna-text-area {
@@ -191,6 +284,34 @@
     line-height: 4rem;
 }
 
+@media (max-width: 480px) {
+    .sauna-container {
+        display: block;
+        padding: 50px 0px;
+    }
+    .sauna-img-area {
+        width: 90%;
+        display: block;
+    }
+    .sauna-text-area {
+        text-align: left;
+        margin-left: 45px;
+        padding-top: 25px;
+    }
+    .sauna-sub-title {
+        color: #911414;
+        font-size: 1.5rem;
+    }
+    .sauna-title {
+        font-size: 3.5rem;
+    }
+    .sauna-text {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 3px;
+    }
+}
+
 
 /*******************
  *地図エリア
@@ -208,10 +329,10 @@
 
 @media (max-width: 480px) {
     .map-area {
-        padding: 30px 0px;
+        padding: 30px 0px 0px;
     }
     .map-area iframe {
-        height: 200px;
+        height: 300px;
     }
 }
 
@@ -345,7 +466,6 @@ print {
 
 .reserve-text-area {
     margin-bottom: 23px;
-    font-family: "Noto Serif JP", serif;
     font-size: 2rem;
     line-height: 2.13333;
     letter-spacing: 0.02em;
@@ -356,6 +476,7 @@ print {
     margin-right: auto;
     margin-left: auto;
     max-width: 376px;
+    width: 80%;
 }
 
 .reserve-btn-target {
@@ -432,4 +553,19 @@ a:hover .reserve-btn-inner::after {
 a:hover .reserve-btn-text {
     -webkit-transform: translate3d(0, -70%, 0);
     transform: translate3d(0, -70%, 0);
+}
+
+@media (max-width: 480px) {
+    .reserve-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .reserve-text-area {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+    .reserve-btn-text {
+        padding: 20px 25px;
+    }
 }

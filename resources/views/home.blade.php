@@ -22,15 +22,15 @@
     <section class="top-img-container">
         <div class="slider">
             <div class="slick-img">
-                <!--<img class="sp-zone" src="{{ asset('/img/minpaku_1_sp.png') }}">-->
+                <img class="sp-zone" src="{{ asset('/img/minpaku_1_sp.png') }}">
                 <img class="pc-zone" src="{{ asset('/img/minpaku_1_pc.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <!--<img class="sp-zone" src="{{ asset('/img/minpaku_2_sp.png') }}">-->
+                <img class="sp-zone" src="{{ asset('/img/minpaku_2_sp.png') }}">
                 <img class="pc-zone" src="{{ asset('/img/minpaku_2_pc.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <!--<img class="sp-zone" src="{{ asset('/img/minpaku_3_sp.png') }}">-->
+                <img class="sp-zone" src="{{ asset('/img/minpaku_3_sp.png') }}">
                 <img class="pc-zone" src="{{ asset('/img/minpaku_3_pc.png') }}" alt="" />
             </div>
         </div>
@@ -88,56 +88,47 @@
     </section>
     <section class="cottage-container">
         <div class="cottage-img-area">
-            <img class="pc-zone" src="{{ asset('/img/cotage_img.png') }}" alt="" />
+            <img src="{{ asset('/img/cotage_img.png') }}" alt="" />
         </div>
         <div class="cottage-text-area">
             <div class="cottage-sub-title">大自然に佇む</div>
             <div class="cottage-title">Cottage</div>
             <div class="cottage-text">
-                <div class="pc-zone">
-                    周りを木々に囲まれ自然と一体化した
-                    <br>木造２階建てのコテージ。
-                    <br>旅の疲れを存分に癒してくださいませ。
-                </div>
-                <div class="sp-zone">
-                </div>
+                周りを木々に囲まれ自然と一体化した
+                <br>木造２階建てのコテージ。
+                <br>旅の疲れを存分に癒してくださいませ。
             </div>
         </div>
     </section>
     <section class="resting-container">
+        <div class="sp-zone resting-img-area">
+            <img src="{{ asset('/img/resting_img.png') }}" alt="" />
+        </div>
         <div class="resting-text-area">
             <div class="resting-sub-title">日常から離れる</div>
             <div class="resting-title">Resting</div>
             <div class="resting-text">
-                <div class="pc-zone">
-                    周りを木々に囲まれ自然と一体化した
-                    <br>木造２階建てのコテージ。
-                    <br>旅の疲れを存分に癒してくださいませ。
-                </div>
-                <div class="sp-zone">
-                </div>
+                周りを木々に囲まれ自然と一体化した
+                <br>木造２階建てのコテージ。
+                <br>旅の疲れを存分に癒してくださいませ。
             </div>
         </div>
-        <div class="resting-img-area">
-            <img class="pc-zone" src="{{ asset('/img/resting_img.png') }}" alt="" />
+        <div class="pc-zone resting-img-area">
+            <img src="{{ asset('/img/resting_img.png') }}" alt="" />
         </div>
     </section>
     <section class="sauna-container">
         <div class="sauna-img-area">
-            <img class="pc-zone" src="{{ asset('/img/sauna_img.png') }}" alt="" />
+            <img src="{{ asset('/img/sauna_img.png') }}" alt="" />
         </div>
         <div class="sauna-text-area">
             <div class="sauna-sub-title">大自然の中で体験する</div>
             <div class="sauna-title">Sauna</div>
             <div class="sauna-text">
-                <div class="pc-zone">
-                    他に誰もいないあなただけの空間で
-                    <br>大自然の中心で経験するテントサウナ。
-                    <br>自然の音を聞きながら、心も体も存分に
-                    <br>癒してくださいませ。
-                </div>
-                <div class="sp-zone">
-                </div>
+                他に誰もいないあなただけの空間で
+                <br>大自然の中心で経験するテントサウナ。
+                <br>自然の音を聞きながら、心も体も存分に
+                <br>癒してくださいませ。
             </div>
         </div>
     </section>
