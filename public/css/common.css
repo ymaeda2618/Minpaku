@@ -58,7 +58,6 @@ section {
 
 .navbar-inverse .navbar-collapse {
     border-color: #101010;
-    background-color: #222;
 }
 
 @media screen and (max-width: 480px) {

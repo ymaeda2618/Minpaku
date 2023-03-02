@@ -4,7 +4,6 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('/slick/slick-theme.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/slick/slick.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/css/loading.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/css/fadein_animation.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/css/home.css') }}">
 <div id="loading-wrapper">
     <div class="balls-guruguru">
@@ -42,7 +41,7 @@
 
     <section class="top-message-container">
         <div class="top-concept__inner">
-            <div class="top-concept-text" data-scroll-anim="true" style="padding-bottom: 20px;">
+            <div class="top-concept-text" data-scroll-anim="true">
                 <p class="top-concept-lead">
                     東京から車で約２時間。
                     <br> 軽井沢の一角「紫水京」別荘地。<br>
@@ -101,7 +100,7 @@
         </div>
     </section>
     <section class="resting-container">
-        <div class="sp-zone resting-img-area">
+        <div class="sp-zone resting-img-area resting-img-area-sp">
             <img src="{{ asset('/img/resting_img.png') }}" alt="" />
         </div>
         <div class="resting-text-area">
@@ -113,7 +112,7 @@
                 <br>旅の疲れを存分に癒してくださいませ。
             </div>
         </div>
-        <div class="pc-zone resting-img-area">
+        <div class="pc-zone resting-img-area  resting-img-area-pc">
             <img src="{{ asset('/img/resting_img.png') }}" alt="" />
         </div>
     </section>

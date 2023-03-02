@@ -31,6 +31,35 @@
 
 
 /*******************
+ *フェードイン対応CSS
+*******************/
+
+.top-text-area,
+.top-concept-text,
+.cottage-img-area,
+.cottage-sub-title,
+.cottage-title,
+.cottage-text,
+.resting-img-area-sp,
+.resting-img-area-pc,
+.resting-sub-title,
+.resting-title,
+.resting-text,
+.sauna-img-area,
+.sauna-sub-title,
+.sauna-title,
+.sauna-text,
+.map-area,
+.top-info-hdg,
+.top-info-table,
+.reserve-title,
+.reserve-text-area,
+.reserve-btn-area {
+    opacity: 0.0;
+}
+
+
+/*******************
  *トップページ
 *******************/
 
@@ -86,6 +115,10 @@
     line-height: 2.13333;
     letter-spacing: 0.02em;
     overflow-x: hidden;
+}
+
+.top-concept-text {
+    padding-bottom: 20px;
 }
 
 @media (max-width: 480px) {
