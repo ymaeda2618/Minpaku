@@ -23,19 +23,28 @@ section {
 }
 
 .navbar-inverse {
-    background-color: transparent;
     border: none;
     width: 100%;
-    top: 25px;
     z-index: 1000;
-    position: fixed;
+    padding: 25px 0px;
+}
+
+.navbar-header {
+    width: 150px;
+    margin-top: -20px;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #222;
 }
 
 .navbar-inverse .navbar-brand {
     color: #ffff;
     font-weight: bolder;
     font-size: 24px;
-    width: 15%;
+    width: 100%;
 }
 
 .navbar-inverse .navbar-brand img {
