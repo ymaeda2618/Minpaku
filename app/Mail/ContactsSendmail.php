@@ -39,8 +39,8 @@ class ContactsSendmail extends Mailable
     {
         // メールの設定
         return $this
-                ->from('example@gmail.com')
-                ->subject('自動送信メール')
+                ->from('info@karuizawa-shisuikyo.com')
+                ->subject('紫水京民泊 自動送信')
                 ->view('contact.mail')
                 ->with([
                 'email' => $this->email,
