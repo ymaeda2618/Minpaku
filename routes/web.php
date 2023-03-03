@@ -20,4 +20,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@getHome');
 Route::get('/about', 'PagesController@getAbout');
-Route::get('/contact', 'PagesController@getContact');
+
+//入力フォームページ
+Route::get('/contact', 'ContactsController@index')->name('contact.index');
+//確認フォームページ
+Route::post('/contact/confirm', 'ContactsController@confirm')->name('contact.confirm');
+//送信完了ページ
+Route::post('/contact/thanks', 'ContactsController@send')->name('contact.send');

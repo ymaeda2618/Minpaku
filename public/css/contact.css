@@ -1,0 +1,48 @@
+/** Author y_maeda
+*********************************
+***
+*** contact CSS
+***
+*********************************F
+** --------------------------------*/
+
+#main-area {
+    color: #080808;
+    padding: 100px 0px;
+    width: 60%;
+    margin: auto;
+}
+
+.contact-title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.btn-area {
+    margin: 30px auto;
+    max-width: 376px;
+    width: 80%;
+}
+
+.btn-area button {
+    display: block;
+    position: relative;
+    background-color: #25313c;
+    border: solid 1px #25313c;
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    text-align: center;
+    padding: 31px 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    #main-area {
+        padding: 50px 0px;
+        width: 80%;
+    }
+}
