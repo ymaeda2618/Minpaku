@@ -70,6 +70,16 @@ section {
 }
 
 @media screen and (max-width: 480px) {
+    .navbar-header {
+        width: unset;
+        margin-top: auto;
+    }
+    .navbar-inverse {
+        padding: 15px 0px;
+    }
+    .navbar-inverse .navbar-brand {
+        width: unset;
+    }
     .navbar-nav {
         float: unset;
     }

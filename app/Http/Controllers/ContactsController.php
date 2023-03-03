@@ -61,7 +61,7 @@ class ContactsController extends Controller
             // ユーザにメールを送信
             \Mail::to($inputs['email'])->send(new ContactsSendmail($inputs));
             // 自分にメールを送信
-            \Mail::to('自分のメールアドレス')->send(new ContactsSendmail($inputs));
+            \Mail::to('info@karuizawa-shisuikyo.com')->send(new ContactsSendmail($inputs));
 
             // 二重送信対策のためトークンを再発行
             $request->session()->regenerateToken();

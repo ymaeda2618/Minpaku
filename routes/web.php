@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/', 'PagesController@getHome');
+Route::get('/', 'PagesController@getHome')->name('home');;
 Route::get('/about', 'PagesController@getAbout');
 
 //入力フォームページ

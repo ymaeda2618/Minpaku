@@ -11,9 +11,16 @@
     padding: 100px 0px;
     width: 60%;
     margin: auto;
+    min-height: 600px;
 }
 
 .contact-title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.thanks-title {
     font-size: 3.5rem;
     text-align: center;
     padding-bottom: 40px;
@@ -40,9 +47,52 @@
     width: 100%;
 }
 
+.btn-confirm-area button {
+    display: block;
+    position: relative;
+    background-color: #25313c;
+    border: solid 1px #25313c;
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    text-align: center;
+    padding: 15px 25px;
+    width: 40%;
+}
+
+.btn-inner-area {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-a-area {
+    display: block;
+    position: relative;
+    background-color: #25313c;
+    border: solid 1px #25313c;
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    text-align: center;
+    padding: 31px 50px;
+    width: 100%;
+}
+
 @media screen and (max-width: 480px) {
     #main-area {
         padding: 50px 0px;
         width: 80%;
+        min-height: 700px;
+    }
+    .contact-title {
+        font-size: 2.5rem;
+    }
+    .btn-confirm-area button {
+        font-size: 0.6rem;
     }
 }
