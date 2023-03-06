@@ -11,7 +11,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="{{Request::is('about') ? 'active' : ''}}"><a href="" onclick="alert('現在準備中です。'); return false;">予約</a></li>
+                <li class="{{Request::is('calendar') ? 'active' : ''}}"><a href="{{ route('calendar.index') }}">予約</a></li>
                 <li class="{{Request::is('about') ? 'active' : ''}}"><a href="" onclick="alert('現在準備中です。'); return false;">運営会社</a></li>
                 <li class="{{Request::is('contact') ? 'active' : ''}}"><a href="{{ route('contact.index') }}">お問い合わせ</a></li>
             </ul>

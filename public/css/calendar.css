@@ -1,0 +1,57 @@
+/** Author y_maeda
+*********************************
+***
+*** calendar CSS
+***
+*********************************
+** --------------------------------*/
+
+#main-area {
+    color: #080808;
+    padding: 100px 0px;
+    width: 60%;
+    margin: auto;
+    min-height: 600px;
+}
+
+.calendar-title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+    border: none;
+}
+
+.fc-h-event .fc-event-title-container {
+    text-align: center;
+}
+
+.fc-h-event {
+    background-color: none;
+}
+
+.fc .fc-daygrid-event-harness {
+    position: absolute;
+    width: 100%;
+    top: 120%;
+}
+
+@media screen and (max-width: 480px) {
+    #main-area {
+        padding: 50px 0px;
+        width: 90%;
+        min-height: 700px;
+    }
+    .calendar-title {
+        font-size: 2.5rem;
+    }
+    .fc .fc-view-harness-active>.fc-view {
+        height: 300px;
+    }
+    .fc .fc-daygrid-event-harness {
+        position: relative;
+    }
+}
