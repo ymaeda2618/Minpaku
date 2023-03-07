@@ -4,7 +4,7 @@
 <div id="main-area">
     <div class="calendar-title">予約カレンダー</div>
     <div id="app">
-        <form method="GET" class="form-horizontal" action="{{ route('calendar.confirm') }}">
+        <form method="GET" class="form-horizontal" action="{{ route('reserve.confirm') }}">
             @csrf
             <div class="m-auto w-50 m-5 p-5">
                 <div id='calendar'></div>

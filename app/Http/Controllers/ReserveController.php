@@ -9,14 +9,20 @@ use Illuminate\Support\Facades\DB;
 
 class ReserveController extends Controller
 {
-    // 予約カレンダーページを表示
-    public function index()
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        return view('calendar.index');
+        $this->middleware('auth');
     }
 
+
     // 予約ページ
-    public function reserve(Request $request, $reserve_slot_id)
+    public function index(Request $request, $reserve_slot_id)
     {
         $reservation_room = array();
 
@@ -45,7 +51,7 @@ class ReserveController extends Controller
            ['ReservationSlot.reserve_flg', '=', false],
         ])->first();
 
-        return view('calendar.reserve')->with([
+        return view('reserve.index')->with([
             "reservation_room"  => $reservation_room
         ]);
     }
@@ -61,25 +67,5 @@ class ReserveController extends Controller
         return view('contact.confirm', [
             'inputs' => $inputs,
         ]);
-    }
-
-    // 予約可能箇所を表示
-    public function getReserveSlots()
-    {
-        // DBから予約可能な
-        return [
-            [
-                'title' => '予約可',
-                'start' => '2023-03-10',
-                'end'   => '2023-03-10',
-                'url'   => 'http://127.0.0.1:8000/reserve/1'
-            ],
-            [
-                'title' => '予約可',
-                'start' => '2023-03-13',
-                'end'   => '2023-03-13',
-                'url'   => 'http://127.0.0.1:8000/reserve/2'
-            ],
-        ];
     }
 }

@@ -18,14 +18,17 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
+Auth::routes();
+
 Route::get('/', 'PagesController@getHome')->name('home');;
 Route::get('/about', 'PagesController@getAbout');
 
 //予約ページ
-Route::get('/calendar', 'ReserveController@index')->name('calendar.index')->middleware('web');
-Route::get('/reserve/{reserve_slot_id}', 'ReserveController@reserve')->name('calendar.reserve')->middleware('web');
-Route::post('/reserve/confirm', 'ReserveController@confirm')->name('calendar.confirm')->middleware('web');
-Route::get('getReserveSlots', 'ReserveController@getReserveSlots');
+Route::get('/calendar', 'CalendarController@index')->name('calendar.index')->middleware('web');
+Route::get('getReserveSlots', 'CalendarController@getReserveSlots');
+
+Route::get('/reserve/{reserve_slot_id}', 'ReserveController@index')->name('reserve.index');
+Route::post('/reserve/confirm', 'ReserveController@confirm')->name('reserve.confirm');
 
 
 // ----------------

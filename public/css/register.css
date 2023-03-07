@@ -1,0 +1,56 @@
+/** Author y_maeda
+*********************************
+***
+*** register CSS
+***
+*********************************
+** --------------------------------*/
+
+#main-area {
+    width: 60%;
+    margin: auto;
+    max-width: 800px;
+    min-height: 1000px;
+    color: #101010;
+    padding-top: 100px;
+}
+
+.card-header {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.register-input-area {
+    padding: 15px 0px;
+}
+
+.login-remember-check-area {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.regis-btn-area {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.regis-btn-area button {
+    width: 80%;
+    margin: auto;
+    max-width: 200px;
+    padding: 20px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    #main-area {
+        min-height: 650px;
+        padding-top: 50px;
+    }
+    .card-header {
+        font-size: 2.5rem;
+    }
+    .regis-btn-area button {
+        padding: 10px 0px;
+    }
+}
