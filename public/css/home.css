@@ -52,15 +52,15 @@
 
 .top-text-area,
 .top-concept-text,
-.cottage-img-area,
-.cottage-sub-title,
-.cottage-title,
-.cottage-text,
-.resting-img-area-sp,
-.resting-img-area-pc,
+.resting-img-area,
 .resting-sub-title,
 .resting-title,
 .resting-text,
+.cottage-img-area-sp,
+.cottage-img-area-pc,
+.cottage-sub-title,
+.cottage-title,
+.cottage-text,
 .sauna-img-area,
 .sauna-sub-title,
 .sauna-title,
@@ -148,78 +148,6 @@
 
 
 /*******************
- *Cottageエリア
-*******************/
-
-.cottage-container {
-    background-color: #ffff;
-    color: #1e212a;
-    display: flex;
-    align-items: flex-start;
-    padding-top: 100px;
-    overflow-x: hidden;
-}
-
-.cottage-img-area {
-    width: 60%;
-    display: flex;
-}
-
-.cottage-img-area img {
-    display: block;
-    width: 100%;
-}
-
-.cottage-text-area {
-    text-align: left;
-    margin-left: 90px;
-    padding-top: 50px;
-}
-
-.cottage-sub-title {
-    color: #911414;
-    font-size: 2rem;
-}
-
-.cottage-title {
-    font-size: 7rem;
-}
-
-.cottage-text {
-    font-size: 2rem;
-    line-height: 4rem;
-}
-
-@media (max-width: 480px) {
-    .cottage-container {
-        display: block;
-        padding-top: 50px;
-    }
-    .cottage-img-area {
-        width: 90%;
-        display: block;
-    }
-    .cottage-text-area {
-        text-align: left;
-        margin-left: 45px;
-        padding-top: 25px;
-    }
-    .cottage-sub-title {
-        color: #911414;
-        font-size: 1.5rem;
-    }
-    .cottage-title {
-        font-size: 3.5rem;
-    }
-    .cottage-text {
-        font-size: 1.2rem;
-        line-height: 2.5rem;
-        letter-spacing: 3px;
-    }
-}
-
-
-/*******************
  *restingエリア
 *******************/
 
@@ -235,7 +163,6 @@
 .resting-img-area {
     width: 60%;
     display: flex;
-    margin-right: 0;
 }
 
 .resting-img-area img {
@@ -247,7 +174,6 @@
     text-align: left;
     margin-left: 90px;
     padding-top: 50px;
-    width: 40%;
 }
 
 .resting-sub-title {
@@ -272,13 +198,11 @@
     .resting-img-area {
         width: 90%;
         display: block;
-        margin-left: auto;
     }
     .resting-text-area {
         text-align: left;
         margin-left: 45px;
         padding-top: 25px;
-        width: 100%;
     }
     .resting-sub-title {
         color: #911414;
@@ -288,6 +212,82 @@
         font-size: 3.5rem;
     }
     .resting-text {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 3px;
+    }
+}
+
+
+/*******************
+ *cottageエリア
+*******************/
+
+.cottage-container {
+    background-color: #ffff;
+    color: #1e212a;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.cottage-img-area {
+    width: 60%;
+    display: flex;
+    margin-right: 0;
+}
+
+.cottage-img-area img {
+    display: block;
+    width: 100%;
+}
+
+.cottage-text-area {
+    text-align: left;
+    margin-left: 90px;
+    padding-top: 50px;
+    width: 40%;
+}
+
+.cottage-sub-title {
+    color: #911414;
+    font-size: 2rem;
+}
+
+.cottage-title {
+    font-size: 7rem;
+}
+
+.cottage-text {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+@media (max-width: 480px) {
+    .cottage-container {
+        display: block;
+        padding-top: 50px;
+    }
+    .cottage-img-area {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+    }
+    .cottage-text-area {
+        text-align: left;
+        margin-left: 45px;
+        padding-top: 25px;
+        width: 100%;
+    }
+    .cottage-sub-title {
+        color: #911414;
+        font-size: 1.5rem;
+    }
+    .cottage-title {
+        font-size: 3.5rem;
+    }
+    .cottage-text {
         font-size: 1.2rem;
         line-height: 2.5rem;
         letter-spacing: 3px;

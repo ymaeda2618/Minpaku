@@ -136,18 +136,18 @@ jQuery(function($) {
         // トップメッセージエリア
         top_concept_text_top = $('.top-concept-text').offset().top;
 
-        // cottageエリア
-        cottage_img_area_top = $('.cottage-img-area').offset().top;
-        cottage_sub_title_top = $('.cottage-sub-title').offset().top;
-        cottage_title_top = $('.cottage-title').offset().top;
-        cottage_text_top = $('.cottage-text').offset().top;
-
         // restingエリア
-        resting_img_area_sp_top = $('.resting-img-area-sp').offset().top;
-        resting_img_area_pc_top = $('.resting-img-area-pc').offset().top;
+        resting_img_area_top = $('.resting-img-area').offset().top;
         resting_sub_title_top = $('.resting-sub-title').offset().top;
         resting_title_top = $('.resting-title').offset().top;
         resting_text_top = $('.resting-text').offset().top;
+
+        // cottageエリア
+        cottage_img_area_sp_top = $('.cottage-img-area-sp').offset().top;
+        cottage_img_area_pc_top = $('.cottage-img-area-pc').offset().top;
+        cottage_sub_title_top = $('.cottage-sub-title').offset().top;
+        cottage_title_top = $('.cottage-title').offset().top;
+        cottage_text_top = $('.cottage-text').offset().top;
 
         // saunaエリア
         sauna_img_area_top = $('.sauna-img-area').offset().top;
@@ -176,18 +176,18 @@ jQuery(function($) {
         // トップメッセージエリア
         if ($(this).scrollTop() > top_concept_text_top - 500) $('.top-concept-text').addClass("entry-SlideUp");
 
-        // cottageエリア
-        if ($(this).scrollTop() > cottage_img_area_top - 500) $('.cottage-img-area').addClass("entry-LeftToRight");
-        if ($(this).scrollTop() > cottage_sub_title_top - 500) $('.cottage-sub-title').addClass("entry-RightToLeft");
-        if ($(this).scrollTop() > cottage_title_top - 500) $('.cottage-title').addClass("entry-RightToLeft");
-        if ($(this).scrollTop() > cottage_text_top - 500) $('.cottage-text').addClass("entry-RightToLeft");
-
         // restingエリア
-        if ($(this).scrollTop() > resting_img_area_sp_top - 500) $('.resting-img-area-sp').addClass("entry-RightToLeft");
-        if ($(this).scrollTop() > resting_img_area_pc_top - 500) $('.resting-img-area-pc').addClass("entry-RightToLeft");
-        if ($(this).scrollTop() > resting_sub_title_top - 500) $('.resting-sub-title').addClass("entry-LeftToRight");
-        if ($(this).scrollTop() > resting_title_top - 500) $('.resting-title').addClass("entry-LeftToRight");
-        if ($(this).scrollTop() > resting_text_top - 500) $('.resting-text').addClass("entry-LeftToRight");
+        if ($(this).scrollTop() > resting_img_area_top - 500) $('.resting-img-area').addClass("entry-LeftToRight");
+        if ($(this).scrollTop() > resting_sub_title_top - 500) $('.resting-sub-title').addClass("entry-RightToLeft");
+        if ($(this).scrollTop() > resting_title_top - 500) $('.resting-title').addClass("entry-RightToLeft");
+        if ($(this).scrollTop() > resting_text_top - 500) $('.resting-text').addClass("entry-RightToLeft");
+
+        // cottageエリア
+        if ($(this).scrollTop() > cottage_img_area_sp_top - 500) $('.cottage-img-area-sp').addClass("entry-RightToLeft");
+        if ($(this).scrollTop() > cottage_img_area_pc_top - 500) $('.cottage-img-area-pc').addClass("entry-RightToLeft");
+        if ($(this).scrollTop() > cottage_sub_title_top - 500) $('.cottage-sub-title').addClass("entry-LeftToRight");
+        if ($(this).scrollTop() > cottage_title_top - 500) $('.cottage-title').addClass("entry-LeftToRight");
+        if ($(this).scrollTop() > cottage_text_top - 500) $('.cottage-text').addClass("entry-LeftToRight");
 
         // saunaエリア
         if ($(this).scrollTop() > sauna_img_area_top - 500) $('.sauna-img-area').addClass("entry-LeftToRight");

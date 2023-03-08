@@ -85,23 +85,9 @@
             </div>
         </div>
     </section>
-    <section class="cottage-container">
-        <div class="cottage-img-area">
-            <img src="{{ asset('/img/cotage_img.png') }}" alt="" />
-        </div>
-        <div class="cottage-text-area">
-            <div class="cottage-sub-title">大自然に佇む</div>
-            <div class="cottage-title">Cottage</div>
-            <div class="cottage-text">
-                自然と一体化した木造２階建てのコテージ。
-                <br>そのすべての空間が、今はあなただけのもの。
-                <br>ひと眠りするもよし、音楽をかけて頂くもよし。
-                <br>ご自由におくつろぎください。
-            </div>
-        </div>
-    </section>
+
     <section class="resting-container">
-        <div class="sp-zone resting-img-area resting-img-area-sp">
+        <div class="resting-img-area">
             <img src="{{ asset('/img/resting_img.png') }}" alt="" />
         </div>
         <div class="resting-text-area">
@@ -114,10 +100,28 @@
                 <br>旅の疲れを存分に癒してくださいませ。
             </div>
         </div>
-        <div class="pc-zone resting-img-area  resting-img-area-pc">
-            <img src="{{ asset('/img/resting_img.png') }}" alt="" />
+    </section>
+
+    <section class="cottage-container">
+        <div class="sp-zone cottage-img-area cottage-img-area-sp">
+            <img src="{{ asset('/img/cotage_img.png') }}" alt="" />
+        </div>
+        <div class="cottage-text-area">
+            <div class="cottage-sub-title">大自然に佇む</div>
+            <div class="cottage-title">Cottage</div>
+            <div class="cottage-text">
+                自然と一体化した木造２階建てのコテージ。
+                <br>そのすべての空間が、今はあなただけのもの。
+                <br>ひと眠りするもよし、音楽をかけて頂くもよし。
+                <br>ご自由におくつろぎください。
+            </div>
+        </div>
+        <div class="pc-zone cottage-img-area  cottage-img-area-pc">
+            <img src="{{ asset('/img/cotage_img.png') }}" alt="" />
         </div>
     </section>
+
+
     <section class="sauna-container">
         <div class="sauna-img-area">
             <img src="{{ asset('/img/sauna_img.png') }}" alt="" />
