@@ -25,7 +25,7 @@ class CreateReservationRoomsTable extends Migration
             $table->integer('option_3_flg')->default(0)->comment('オプション3フラグ');
             $table->string('option_3')->nullable()->comment('オプション3');
             $table->timestamp('created_at')->comment('作成日時');
-            $table->timestamp('updated_at')->comment('更新日時');
+            $table->timestamp('updated_at')->comment('更新日時')->useCurrent();
         });
     }
 

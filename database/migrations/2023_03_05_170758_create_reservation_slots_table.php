@@ -19,7 +19,7 @@ class CreateReservationSlotsTable extends Migration
             $table->bigInteger('reservation_room_id')->default(0)->comment('予約部屋テーブルID');
             $table->integer('reserve_flg')->default(0)->comment('予約フラグ');
             $table->timestamp('created_at')->comment('作成日時');
-            $table->timestamp('updated_at')->comment('更新日時');
+            $table->timestamp('updated_at')->comment('更新日時')->useCurrent();
         });
     }
 
