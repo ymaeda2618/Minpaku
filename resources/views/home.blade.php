@@ -93,9 +93,10 @@
             <div class="cottage-sub-title">大自然に佇む</div>
             <div class="cottage-title">Cottage</div>
             <div class="cottage-text">
-                周りを木々に囲まれ自然と一体化した
-                <br>木造２階建てのコテージ。
-                <br>旅の疲れを存分に癒してくださいませ。
+                自然と一体化した木造２階建てのコテージ。
+                <br>そのすべての空間が、今はあなただけのもの。
+                <br>ひと眠りするもよし、音楽をかけて頂くもよし。
+                <br>ご自由におくつろぎください。
             </div>
         </div>
     </section>
@@ -107,8 +108,9 @@
             <div class="resting-sub-title">日常から離れる</div>
             <div class="resting-title">Resting</div>
             <div class="resting-text">
-                周りを木々に囲まれ自然と一体化した
-                <br>木造２階建てのコテージ。
+                日々の喧騒から離れ、自然広がる軽井沢。
+                <br>あなたを囲む木々の匂いと、豊かなる緑の景観は
+                <br>特別な体験と優雅なるひとときを与えます。
                 <br>旅の疲れを存分に癒してくださいませ。
             </div>
         </div>
