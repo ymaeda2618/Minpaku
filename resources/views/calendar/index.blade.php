@@ -19,7 +19,7 @@
             initialView: 'dayGridMonth',
             eventSources: [ // ←★追記
                 {
-                    url: '/getReserveSlots',
+                    url: './getReserveSlots',
                 },
             ],
             eventSourceFailure() { // ←★追記
