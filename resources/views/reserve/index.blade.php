@@ -29,19 +29,27 @@
             <div class="input-display-area">{{ $reservation_room->room_capacity }}</div>
         </div>
 
+        <div class="form-group input-request-message">
+            <label class="control-label">以下入力欄</label>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="input-num-guests">宿泊人数 <span class="attention">※数値のみ</span></label>
+            <input name="num-guests" id="input-num-guests" class="form-control" value="{{ old('num-guests') }}" type="tel"> @if ($errors->has('num-guests'))
+            <p class="error-message">{{ $errors->first('num-guests') }}</p>
+            @endif
+        </div>
+
         @if($reservation_room->option_1_flg)
         <div class="form-group">
             <label class="control-label">オプション1</label>
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" value="option-flg-1"> <span>{{ $reservation_room->option_1 }}</span>
+                    <input type="checkbox" name="option-flg-1" value="option-flg-1"> <span>{{ $reservation_room->option_1 }}</span>
                 </label>
             </div>
         </div>
-        @endif
-        <div><input type="hidden" name="option_1" value="{{ $reservation_room->option_1 }}"></div>
-
-        @if($reservation_room->option_2_flg)
+        @endif @if($reservation_room->option_2_flg)
         <div class="form-group">
             <label class="control-label">オプション2</label>
             <div class="checkbox">
@@ -50,10 +58,7 @@
                 </label>
             </div>
         </div>
-        @endif
-        <div><input type="hidden" name="option_2" value="{{ $reservation_room->option_2 }}"></div>
-
-        @if($reservation_room->option_3_flg)
+        @endif @if($reservation_room->option_3_flg)
         <div class="form-group">
             <label class="control-label">オプション3</label>
             <div class="checkbox">
@@ -63,8 +68,6 @@
             </div>
         </div>
         @endif
-        <div><input type="hidden" name="option_3" value="{{ $reservation_room->option_3 }}"></div>
-
         <div class="form-group">
             <div class="btn-area">
                 <button type="submit" name="action" value="submit">予約内容確認</button>

@@ -29,6 +29,7 @@ Route::get('getReserveSlots', 'CalendarController@getReserveSlots');
 
 Route::get('/reserve/{reserve_slot_id}', 'ReserveController@index')->name('reserve.index');
 Route::post('/reserve/confirm', 'ReserveController@confirm')->name('reserve.confirm');
+Route::post('/reserve/complete', 'ReserveController@complete')->name('reserve.complete');
 
 
 // ----------------
