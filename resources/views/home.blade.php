@@ -1,10 +1,10 @@
 @extends('layouts.app') @section('content')
-<script type="text/javascript" src="{{ asset('/public/slick/slick.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/public/js/home.js') }}"></script>
-<link rel="stylesheet" type="text/css" href="{{ asset('/public/slick/slick-theme.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/public/slick/slick.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/public/css/loading.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/public/css/home.css') }}">
+<script type="text/javascript" src="{{ asset('/slick/slick.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/home.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset('/slick/slick-theme.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/slick/slick.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/loading.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/home.css') }}">
 <div id="loading-wrapper">
     <div class="balls-guruguru">
         <span class="ball ball-1"></span>
@@ -21,16 +21,16 @@
     <section class="top-img-container">
         <div class="slider">
             <div class="slick-img">
-                <img class="sp-zone" src="{{ asset('/public/img/minpaku_1_sp.png') }}">
-                <img class="pc-zone" src="{{ asset('/public/img/minpaku_1_pc.png') }}" alt="" />
+                <img class="sp-zone" src="{{ asset('/img/minpaku_1_sp.png') }}">
+                <img class="pc-zone" src="{{ asset('/img/minpaku_1_pc.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="sp-zone" src="{{ asset('/public/img/minpaku_2_sp.png') }}">
-                <img class="pc-zone" src="{{ asset('/public/img/minpaku_2_pc.png') }}" alt="" />
+                <img class="sp-zone" src="{{ asset('/img/minpaku_2_sp.png') }}">
+                <img class="pc-zone" src="{{ asset('/img/minpaku_2_pc.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="sp-zone" src="{{ asset('/public/img/minpaku_3_sp.png') }}">
-                <img class="pc-zone" src="{{ asset('/public/img/minpaku_3_pc.png') }}" alt="" />
+                <img class="sp-zone" src="{{ asset('/img/minpaku_3_sp.png') }}">
+                <img class="pc-zone" src="{{ asset('/img/minpaku_3_pc.png') }}" alt="" />
             </div>
         </div>
         <div class="top-text-area">
@@ -60,35 +60,35 @@
     <section class="album-container">
         <div class="slider-album">
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_1.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_1.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_2.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_2.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_3.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_3.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_4.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_4.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_5.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_5.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_6.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_6.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_7.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_7.png') }}" alt="" />
             </div>
             <div class="slick-img">
-                <img class="album-img" src="{{ asset('/public/img/album_8.png') }}" alt="" />
+                <img class="album-img" src="{{ asset('/img/album_8.png') }}" alt="" />
             </div>
         </div>
     </section>
 
     <section class="resting-container">
         <div class="resting-img-area">
-            <img src="{{ asset('/public/img/resting_img.png') }}" alt="" />
+            <img src="{{ asset('/img/resting_img.png') }}" alt="" />
         </div>
         <div class="resting-text-area">
             <div class="resting-sub-title">日常から離れる</div>
@@ -104,7 +104,7 @@
 
     <section class="cottage-container">
         <div class="sp-zone cottage-img-area cottage-img-area-sp">
-            <img src="{{ asset('/public/img/cotage_img.png') }}" alt="" />
+            <img src="{{ asset('/img/cotage_img.png') }}" alt="" />
         </div>
         <div class="cottage-text-area">
             <div class="cottage-sub-title">大自然に佇む</div>
@@ -117,14 +117,14 @@
             </div>
         </div>
         <div class="pc-zone cottage-img-area  cottage-img-area-pc">
-            <img src="{{ asset('/public/img/cotage_img.png') }}" alt="" />
+            <img src="{{ asset('/img/cotage_img.png') }}" alt="" />
         </div>
     </section>
 
 
     <section class="sauna-container">
         <div class="sauna-img-area">
-            <img src="{{ asset('/public/img/sauna_img.png') }}" alt="" />
+            <img src="{{ asset('/img/sauna_img.png') }}" alt="" />
         </div>
         <div class="sauna-text-area">
             <div class="sauna-sub-title">大自然の中で体験する</div>
