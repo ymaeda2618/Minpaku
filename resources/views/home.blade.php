@@ -171,7 +171,7 @@
                 <span class="u-wbr">ご予約は、下記の予約ページから承っております。</span>
             </p>
             <div class="reserve-btn-area">
-                <a href="" target="_blank" class="reserve-btn-target" onclick="alert('現在準備中です。'); return false;">
+                <a href="{{ route('calendar.index') }}" target="_blank" class="reserve-btn-target">
                     <div class="reserve-btn-inner" data-btn-text-target="true" data-btn-text="RESERVATION">
                         <span class="reserve-btn-text">RESERVATION</span>
                     </div>
