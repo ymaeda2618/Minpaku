@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Mail\ContactsSendmail;
+use App\Http\Requests\ContactRequest;
 
 class ContactsController extends Controller
 {
@@ -13,16 +14,8 @@ class ContactsController extends Controller
         return view('contact.index');
     }
 
-    public function confirm(Request $request)
+    public function confirm(ContactRequest $request)
     {
-        // バリデーションルールを定義
-        // 引っかかるとエラーを起こしてくれる
-        $request->validate([
-            'email' => 'required|email',
-            'title' => 'required',
-            'body' => 'required',
-        ]);
-
         // フォームからの入力値を全て取得
         $inputs = $request->all();
 

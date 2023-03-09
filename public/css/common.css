@@ -69,6 +69,10 @@ section {
     border-color: #101010;
 }
 
+.error-message {
+    color: red;
+}
+
 @media screen and (max-width: 480px) {
     .navbar-header {
         width: unset;

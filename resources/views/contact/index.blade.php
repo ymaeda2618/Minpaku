@@ -12,7 +12,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label" for="input-title">タイトル</label>
+            <label class="control-label" for="input-title">件名</label>
             <input name="title" id="input-title" class="form-control" value="{{ old('title') }}" type="text"> @if ($errors->has('title'))
             <p class="error-message">{{ $errors->first('title') }}</p>
             @endif

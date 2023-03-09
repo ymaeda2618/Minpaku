@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
 
-            <label class="control-label" for="input-title">タイトル</label>
+            <label class="control-label" for="input-title">件名</label>
             <div class="input-display-area">{{ $inputs['title'] }}</div>
             <input name="title" id="input-title" class="form-control" value="{{ $inputs['title'] }}" type="hidden">
         </div>
