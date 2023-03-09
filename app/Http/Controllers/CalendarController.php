@@ -36,7 +36,7 @@ class CalendarController extends Controller
                 'title' => '予約可',
                 'start' => $reservation_room_val->thedate,
                 'end'   => $reservation_room_val->thedate,
-                'url'   => '../reserve/'.$reservation_room_val->id
+                'url'   => './reserve/'.$reservation_room_val->id
             ];
         }
 
