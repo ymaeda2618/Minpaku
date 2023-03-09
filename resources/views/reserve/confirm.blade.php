@@ -80,9 +80,9 @@
         </div>
         @endif
         <div class="form-group">
-            <div class="btn-confirm-area">
+            <div class="btn-reserve-area">
                 <div class="btn-inner-area">
-                    <button type="submit" name="action" value="back">入力内容修正</button>
+                    <button type="button" onClick="history.back();">入力内容修正</button>
                     <button type="submit" name="action" value="submit">送信する</button>
                 </div>
             </div>
