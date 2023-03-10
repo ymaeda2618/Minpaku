@@ -1,0 +1,134 @@
+/** Author y_maeda
+*********************************
+***
+*** mypage CSS
+***
+*********************************
+** --------------------------------*/
+
+#main-area {
+    color: #080808;
+    padding: 100px 0px;
+    width: 80%;
+    margin: auto;
+    min-height: 850px;
+}
+
+.mypage-title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.user-info-title,
+.reserve-history-title {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 50px 0px 20px 20px;
+    width: 80%;
+    font-weight: bold;
+    margin: auto;
+}
+
+.reserve-history-title span {
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.reserve-history-table-area {
+    width: 100%;
+}
+
+.user-info-table,
+.reserve-history-table {
+    width: 80%;
+    margin: auto;
+    border: #737373 solid 1px;
+}
+
+.user-info-table th,
+.reserve-history-table th {
+    font-size: 2.0rem;
+    font-weight: bolder;
+    background-color: #fae8c9;
+    border: #737373 solid 1px;
+    padding: 20px;
+}
+
+.user-info-table th:first-of-type {
+    width: 30%;
+}
+
+.user-info-table th:nth-of-type(2) {
+    width: 40%;
+}
+
+.user-info-table th:nth-of-type(3) {
+    width: 20%;
+}
+
+.user-info-table th:nth-of-type(4) {
+    width: 10%;
+}
+
+.reserve-history-table th:first-of-type {
+    width: 15%;
+}
+
+.reserve-history-table th:nth-of-type(2) {
+    width: 20%;
+}
+
+.reserve-history-table th:nth-of-type(3) {
+    width: 40%;
+}
+
+.reserve-history-table th:nth-of-type(4) {
+    width: 15%;
+}
+
+.reserve-history-table th:nth-of-type(5) {
+    width: 10%;
+}
+
+.user-info-table td,
+.reserve-history-table td {
+    font-size: 1.5rem;
+    border: #737373 solid 1px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    #main-area {
+        padding: 50px 0px;
+        width: 90%;
+        min-height: 700px;
+    }
+    .mypage-title {
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+    }
+    .user-info-title,
+    .reserve-history-title {
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 25px 0px 10px 10px;
+    }
+    .reserve-history-title span {
+        font-size: 0.5rem;
+    }
+    .user-info-table,
+    .reserve-history-table {
+        width: 100%;
+    }
+    .user-info-table th,
+    .reserve-history-table th {
+        font-size: 1.0rem;
+        padding: 5px;
+    }
+    .user-info-table td,
+    .reserve-history-table td {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}

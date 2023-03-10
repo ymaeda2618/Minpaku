@@ -20,17 +20,29 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'PagesController@getHome')->name('home');;
+// ----------------
+// ホーム画面
+// ----------------
+Route::get('/', 'PagesController@getHome')->name('home');
 Route::get('/about', 'PagesController@getAbout');
 
-//予約ページ
+// ----------------
+// カレンダ関連
+// ----------------
 Route::get('/calendar', 'CalendarController@index')->name('calendar.index')->middleware('web');
 Route::get('getReserveSlots', 'CalendarController@getReserveSlots');
 
+// ----------------
+// 予約関連
+// ----------------
 Route::get('/reserve/{reserve_slot_id}', 'ReserveController@index')->name('reserve.index');
 Route::post('/reserve/confirm', 'ReserveController@confirm')->name('reserve.confirm');
 Route::post('/reserve/complete', 'ReserveController@complete')->name('reserve.complete');
 
+// ----------------
+// マイページ関連
+// ----------------
+Route::get('/mypage', 'MypageController@index')->name('mypage.index');
 
 // ----------------
 // お問い合わせ関連

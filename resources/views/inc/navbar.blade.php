@@ -11,12 +11,12 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="{{Request::is('calendar') ? 'active' : ''}}"><a href="{{ route('calendar.index') }}">予約</a></li>
-                <li class="{{Request::is('about') ? 'active' : ''}}"><a href="" onclick="alert('現在準備中です。'); return false;">運営会社</a></li>
-                <li class="{{Request::is('contact') ? 'active' : ''}}"><a href="{{ route('contact.index') }}">お問い合わせ</a></li>
+                <li><a href="{{ route('calendar.index') }}">予約</a></li>
+                <li><a href="" onclick="alert('現在準備中です。'); return false;">運営会社</a></li>
+                <li><a href="{{ route('contact.index') }}">お問い合わせ</a></li>
                 @guest
-                <li class="{{Request::is('login') ? 'active' : ''}}"><a href="{{ route('login') }}">ログイン</a></li>@endguest @auth
-                <li class=""><a href="" onclick="alert('現在準備中です。'); return false;">マイページ</a></li>@endauth
+                <li><a href="{{ route('login') }}">ログイン</a></li>@endguest @auth
+                <li><a href="{{ route('mypage.index') }}">マイページ</a></li>@endauth
             </ul>
         </div>
         <!--/.nav-collapse -->
