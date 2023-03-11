@@ -18,7 +18,7 @@
                         <td>{{ $user_info['name'] }}</td>
                         <td>{{ $user_info['email'] }}</td>
                         <td>{{ $user_info['tel'] }}</td>
-                        <td><a href="" onclick="alert('現在準備中です。'); return false;">編集</a></td>
+                        <td><a href="{{route('user.index')}}">編集</a></td>
                     </tr>
                 </tbody>
             </table>

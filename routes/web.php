@@ -44,6 +44,13 @@ Route::post('/reserve/complete', 'ReserveController@complete')->name('reserve.co
 // ----------------
 Route::get('/mypage', 'MypageController@index')->name('mypage.index');
 
+
+// ----------------
+// ユーザー情報更新関連
+// ----------------
+Route::get('/userEdit', 'UserController@index')->name('user.index');
+Route::post('/userUpdate', 'UserController@update')->name('user.update');
+
 // ----------------
 // お問い合わせ関連
 // ----------------
