@@ -57,10 +57,10 @@
             <label class="control-label">オプション2</label>
             <div class="checkbox">
                 @if(isset($inputs['option-flg-2']))
-                <div class="input-display-area">〇{{ $reservation_room->option_1 }}</div>
+                <div class="input-display-area">〇{{ $reservation_room->option_2 }}</div>
                 <div><input type="hidden" name="option_2_flg" value="true"></div>
                 @else
-                <div class="input-display-area">×{{ $reservation_room->option_1 }}</div>
+                <div class="input-display-area">×{{ $reservation_room->option_2 }}</div>
                 <div><input type="hidden" name="option_2_flg" value="false"></div>
                 @endif
             </div>
@@ -70,10 +70,10 @@
             <label class="control-label">オプション3</label>
             <div class="checkbox">
                 @if(isset($inputs['option-flg-3']))
-                <div class="input-display-area">〇{{ $reservation_room->option_1 }}</div>
+                <div class="input-display-area">〇{{ $reservation_room->option_3 }}</div>
                 <div><input type="hidden" name="option_3_flg" value="true"></div>
                 @else
-                <div class="input-display-area">×{{ $reservation_room->option_1 }}</div>
+                <div class="input-display-area">×{{ $reservation_room->option_3 }}</div>
                 <div><input type="hidden" name="option_3_flg" value="false"></div>
                 @endif
             </div>
