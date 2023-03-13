@@ -12,7 +12,6 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="{{ route('calendar.index') }}">予約</a></li>
-                <li><a href="" onclick="alert('現在準備中です。'); return false;">運営会社</a></li>
                 <li><a href="{{ route('contact.index') }}">お問い合わせ</a></li>
                 @guest
                 <li><a href="{{ route('login') }}">ログイン</a></li>@endguest @auth
