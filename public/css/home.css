@@ -475,6 +475,9 @@ print {
     .top-info-table td {
         display: block;
     }
+    .top-info-table td {
+        font-size: 1.2rem;
+    }
 }
 
 @media all and (min-width: 768px),
